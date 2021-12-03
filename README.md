@@ -8,6 +8,7 @@ Description: "Product X is the best..."
 
 signing key: "..."
 "
+
 In the menu bar there will be a button for a user to create a product listing. When clicked, there will be a prompt that will ask for the products name, price, description, etc. After that is completed, the product can be sent to that market and be seen by other users.
 
 Another feature that will be needed is the verification of pgp keys. With this feature, we could implement a system where customers can review the merchants. And to prevent review spamming, there could be a requirement that each customer has had to buy a product from that merchant. One way to go about this is every time a customer buys an item there is a confirmation message sent to the customer which contains a key that will be used to review that merchant.
