@@ -1,3 +1,10 @@
+How to run the python file: 
+First set up the bitmessage daemon by following the instructions here:
+Build bitmessage from source "http://bitmsgdyvsmwgsimkxplisxbzpewvkhfm3fmomzd63apaymaxiznz6ad.onion/index.php/Compiling_instructions" or "https://wiki.bitmessage.org/index.php/Compiling_instructions". Set up the daemon by following these instructions "http://bitmsgdyvsmwgsimkxplisxbzpewvkhfm3fmomzd63apaymaxiznz6ad.onion/index.php/Daemon" or "https://wiki.bitmessage.org/index.php/Daemon". Set up the API in the keys.dat file
+"http://bitmsgdyvsmwgsimkxplisxbzpewvkhfm3fmomzd63apaymaxiznz6ad.onion/index.php/API_Reference" or "https://wiki.bitmessage.org/index.php/API_Reference"
+
+Next, change the username and password in the test file to the username and password that is used in the daemon. This will allow the api to connect to the daemon. Now you can run the test file. 
+
 The test.py file is the basic lay out of the app so far. I would recommend familiarizing yourself with Bitmessage. Bitmessage is based on bitcoin but is meant for messaging rather than transfering currency. The idea of our project is to build on top of Bitmessage and use it as a communications layer. Specifically, we will use bitmessage's "chan" feature as our basis for each market. For example, when I add a new market, I will enter the bitmessage chan address. In the market there will be product listings and our app will scan the market to find said product listings. Product listings are simply the messages that merchants sent via bitmessage. In order for the app to scan the market for product listings, there has to be a specific format in which each listing will be made. An example would be like the following:
 
 "
